@@ -1,7 +1,6 @@
 from fastapi import FastAPI
+from router.router import libro
 
 app = FastAPI()
 
-@app.get('/')
-def root():
-    return {"hola": "Soy una api"}
+app.include_router(libro)
