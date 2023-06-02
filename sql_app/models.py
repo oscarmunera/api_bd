@@ -1,7 +1,7 @@
 from sqlalchemy import Column,Integer,String
 from sql_app.database import Base
 
-class libro(Base):
+class Libro(Base):
     __tablename__ = "libros"
 
     id = Column(Integer, primary_key=True)
