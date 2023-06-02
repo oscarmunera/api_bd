@@ -1,5 +1,5 @@
 from sqlalchemy.orm import Session
-from sql_app import models
+import models
 
 def get_libro(db: Session, libro_id: int):
     return db.query(models.Libro).filter(models.Libro.id == libro_id).first()
